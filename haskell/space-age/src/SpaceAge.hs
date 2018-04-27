@@ -3,7 +3,8 @@ module SpaceAge (Planet(..), ageOn, main) where
 import Data.Map(Map)
 import qualified Data.Map as Map
 
-main = print("What")
+main = do 
+    printStrLn(ageOn(1000000000 Earth))
 
 data Planet = Mercury
             | Venus
@@ -14,8 +15,17 @@ data Planet = Mercury
             | Uranus
             | Neptune
 
-ageOn :: Planet -> Float -> Float
-ageOn planet seconds = error "You need to implement this function."
+planetGetEarthDays :: Planet -> Float  
+planetGetEarthDays planet = 
+    case planet of 
+        Mercury -> 0.2408467
+        Venus -> 0.61519726 
+        Earth -> 365.25
+        Mars -> 1.8808158 
+        Jupiter -> 11.862615
+        Saturn -> 29.447498
+        Uranus -> 84.016846
+        Neptune -> 164.79132
 
-createMap :: Map Planet [Integer]
-createMap = error "You need to implement this function."
+ageOn :: Planet -> Float -> Float
+ageOn planet seconds = seconds / (planetGetEarthDays(planet) * 86400)
