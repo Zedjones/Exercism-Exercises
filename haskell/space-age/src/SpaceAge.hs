@@ -1,10 +1,7 @@
 module SpaceAge (Planet(..), ageOn, main) where
 
-import Data.Map(Map)
-import qualified Data.Map as Map
-
 main = do 
-    printStrLn(ageOn(1000000000 Earth))
+    print(ageOn Earth 1000000000)
 
 data Planet = Mercury
             | Venus
@@ -20,7 +17,7 @@ planetGetEarthDays planet =
     case planet of 
         Mercury -> 0.2408467
         Venus -> 0.61519726 
-        Earth -> 365.25
+        Earth -> 1
         Mars -> 1.8808158 
         Jupiter -> 11.862615
         Saturn -> 29.447498
@@ -28,4 +25,4 @@ planetGetEarthDays planet =
         Neptune -> 164.79132
 
 ageOn :: Planet -> Float -> Float
-ageOn planet seconds = seconds / (planetGetEarthDays(planet) * 86400)
+ageOn planet seconds = seconds / (planetGetEarthDays(planet) * 86400 * 365.25)
