@@ -31,15 +31,3 @@ responseFor xs =
     else if last(strip xs) == '?'
         then "Sure." 
     else "Whatever."
-
-substring :: String -> String -> Bool 
-substring (x:xs) [] = False 
-substring xs ys 
-        | prefix xs ys = True 
-        | substring xs (tail ys) = True 
-        | otherwise = False
-
-prefix :: String -> String -> Bool
-prefix [] ys = True
-prefix (x:xs) [] = False
-prefix (x:xs) (y:ys) = (x == y) && prefix xs ys
