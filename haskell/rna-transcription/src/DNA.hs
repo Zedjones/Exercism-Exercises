@@ -13,5 +13,6 @@ singleToRNA c =
 
 toRNA :: String -> Maybe String
 toRNA xs 
+    | [] == xs = Nothing 
     | not $ all isDNA xs = Nothing
     | otherwise = Just $ map singleToRNA xs
