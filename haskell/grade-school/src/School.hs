@@ -15,7 +15,5 @@ grade gradeNum school = map (snd) (filter byGrade (classes school))
     where byGrade x = fst x == gradeNum
 
 sorted :: School -> [(Int, [String])]
-sorted school = removeDuplicates $ [(grades, sort $ grade grades school) | (grades, s) <- schoolClasses]
-    where 
-        schoolClasses = classes school 
-        removeDuplicates = map head . group . sort
+sorted school = sort $ nub $ [(grades, sort $ grade grades school) | (grades, s) <- schoolClasses]
+    where schoolClasses = classes school 
