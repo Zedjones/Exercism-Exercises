@@ -1,11 +1,10 @@
 ﻿module Hamming
 
 let distance (strand1: string) (strand2: string): int option = 
-    let seq1, seq2 = Seq.toList strand1, Seq.toList strand2 in
-        match seq1.Length = seq2.Length with
-        | true -> 
-            List.zip seq1 seq2 |> 
-            List.filter (fun (x, y) -> x <> y) |> 
-            List.length |> 
-            Some
-        | false -> None
+    match strand1.Length = strand2.Length with
+    | true -> 
+        Seq.zip strand1 strand2 |> 
+        Seq.filter (fun (x, y) -> x <> y) |> 
+        Seq.length |> 
+        Some
+    | false -> None
