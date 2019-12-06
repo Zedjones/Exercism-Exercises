@@ -5,7 +5,7 @@ let distance (strand1: string) (strand2: string): int option =
         match seq1.Length = seq2.Length with
         | true -> 
             List.zip seq1 seq2 |> 
-            List.filter (fun (x, y) -> x.Equals y |> not) |> 
+            List.filter (fun (x, y) -> x <> y) |> 
             List.length |> 
             Some
         | false -> None
