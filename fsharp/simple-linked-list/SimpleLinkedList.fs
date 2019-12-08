@@ -15,24 +15,20 @@ let rec add (x: int) (n: Node option) =
     | None -> Node(x, None) |> Some
     | Some(node) -> create node.Value (add x node.Next)
 
-let next (x: Node option) =
-    match x with
+let next = function
     | None -> None
-    | Some(x) -> x.Next
+    | Some(x: Node) -> x.Next
 
-let datum (x: Node option) =
-    match x with
+let datum  = function
     | None -> failwith "x is not a valid node"
-    | Some(x) -> x.Value
+    | Some(x: Node) -> x.Value
 
-let rec toList (x: Node option) = 
-    match x with
+let rec toList = function
     | None -> []
-    | Some(x) -> List.append [x.Value] (toList x.Next)
+    | Some(x: Node) -> List.append [x.Value] (toList x.Next)
 
-let rec reverse (x: Node option) = 
-    match x with
-    | None -> x
-    | Some(x) -> add x.Value (reverse x.Next)
+let rec reverse = function
+    | None -> None
+    | Some(x: Node) -> add x.Value (reverse x.Next)
 
 let fromList xs = List.fold (fun x n -> add n x) None xs
