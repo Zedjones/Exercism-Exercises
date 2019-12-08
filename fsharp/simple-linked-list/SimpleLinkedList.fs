@@ -1,23 +1,41 @@
 module SimpleLinkedList
 
-//TODO: define LinkedList type
-
 type Node(value, nextNode: Node option) = 
     member this.Value = value
     member this.Next = nextNode
 
 let nil = None
 
-let create x n = failwith "You need to implement this function."
-
 let isNil (x: Node option) = x = None
 
-let next (x: Node) = x.Next 
+let create (x: int) (n: Node option) = Node(x, n) |> Some
 
-let datum x = failwith "You need to implement this function."
+let rec add (x: int) (n: Node option) = 
+    match n with
+    | None -> Node(x, None) |> Some
+    | Some(node) -> 
+        match node.Next with
+        | None -> create node.Value (Node(x, None) |> Some)
+        | Some(next) -> create node.Value (add x (Some next))
 
-let toList x = failwith "You need to implement this function."
+let next (x: Node option) =
+    match x with
+    | None -> None
+    | Some(x) -> x.Next
 
-let fromList xs = failwith "You need to implement this function."
+let datum (x: Node option) =
+    match x with
+    | None -> failwith "x is not a valid node"
+    | Some(x) -> x.Value
 
-let reverse x = failwith "You need to implement this function."
+let rec toList (x: Node option) = 
+    match x with
+    | None -> []
+    | Some(x) -> List.append [x.Value] (toList x.Next)
+
+let rec reverse (x: Node option) = 
+    match x with
+    | None -> x
+    | Some(x) -> add x.Value (reverse x.Next)
+
+let fromList xs = List.fold (fun x n -> add n x) None xs
