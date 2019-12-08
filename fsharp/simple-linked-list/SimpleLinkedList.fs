@@ -13,10 +13,7 @@ let create (x: int) (n: Node option) = Node(x, n) |> Some
 let rec add (x: int) (n: Node option) = 
     match n with
     | None -> Node(x, None) |> Some
-    | Some(node) -> 
-        match node.Next with
-        | None -> create node.Value (Node(x, None) |> Some)
-        | Some(next) -> create node.Value (add x (Some next))
+    | Some(node) -> create node.Value (add x node.Next)
 
 let next (x: Node option) =
     match x with

@@ -12,7 +12,7 @@ let fixNegative minutes = if minutes < 0 then 1440 + minutes else minutes
 
 let calculateProper hours minutes = 
     let totalMinutes = ((60 * hours) + minutes) % 1440 |> fixNegative in
-        totalMinutes / 60 % 24, totalMinutes % 60
+        totalMinutes / 60, totalMinutes % 60
 
 let create hours minutes = 
     calculateProper hours minutes |> Clock
