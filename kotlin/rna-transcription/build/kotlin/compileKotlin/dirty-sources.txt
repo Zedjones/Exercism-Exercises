@@ -1,1 +1,0 @@
-/home/zedjones/Documents/Personal/Exercism-Exercises/kotlin/rna-transcription/src/main/kotlin/RnaTranscription.kt
