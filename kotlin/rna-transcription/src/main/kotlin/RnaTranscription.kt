@@ -7,6 +7,4 @@ fun toRNA(dna: Char): Char =
         else -> 'Z'
     }
 
-fun transcribeToRna(dna: String): String = 
-    if (dna == "") ""
-    else dna.map { toRNA(it) }.joinToString("")
+fun transcribeToRna(dna: String): String = dna.map { toRNA(it) }.joinToString("")

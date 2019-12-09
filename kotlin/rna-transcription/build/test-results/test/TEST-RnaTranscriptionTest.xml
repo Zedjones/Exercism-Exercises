@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RnaTranscriptionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-12-09T18:42:17" hostname="zedjones-desktop" time="0.01">
+<testsuite name="RnaTranscriptionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-12-09T21:19:52" hostname="zedjones-desktop" time="0.011">
   <properties/>
-  <testcase name="empty RNA" classname="RnaTranscriptionTest" time="0.006"/>
+  <testcase name="empty RNA" classname="RnaTranscriptionTest" time="0.008"/>
   <testcase name="RNA complement of guanine is cytosine" classname="RnaTranscriptionTest" time="0.003"/>
   <testcase name="RNA complement of thymine is adenine" classname="RnaTranscriptionTest" time="0.0"/>
   <testcase name="RNA complement of cytosine is guanine" classname="RnaTranscriptionTest" time="0.0"/>
