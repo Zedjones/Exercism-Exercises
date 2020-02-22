@@ -30,7 +30,7 @@ version = Version [1,2,0,5] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/twelve-days/.stack-work/install/x86_64-linux-tinfo6/a8fe30e2d5c57a16e3dba54071ef6fa4bf8aa8514da4410b74c98cd3e5f3aac8/8.6.5/bin"
-libdir     = "/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/twelve-days/.stack-work/install/x86_64-linux-tinfo6/a8fe30e2d5c57a16e3dba54071ef6fa4bf8aa8514da4410b74c98cd3e5f3aac8/8.6.5/lib/x86_64-linux-ghc-8.6.5/twelve-days-1.2.0.5-6zcuXV0PQ4Ox7BMiW7Mi"
+libdir     = "/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/twelve-days/.stack-work/install/x86_64-linux-tinfo6/a8fe30e2d5c57a16e3dba54071ef6fa4bf8aa8514da4410b74c98cd3e5f3aac8/8.6.5/lib/x86_64-linux-ghc-8.6.5/twelve-days-1.2.0.5-1Zm1RhwLd1C40pMLPeV5s4"
 dynlibdir  = "/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/twelve-days/.stack-work/install/x86_64-linux-tinfo6/a8fe30e2d5c57a16e3dba54071ef6fa4bf8aa8514da4410b74c98cd3e5f3aac8/8.6.5/lib/x86_64-linux-ghc-8.6.5"
 datadir    = "/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/twelve-days/.stack-work/install/x86_64-linux-tinfo6/a8fe30e2d5c57a16e3dba54071ef6fa4bf8aa8514da4410b74c98cd3e5f3aac8/8.6.5/share/x86_64-linux-ghc-8.6.5/twelve-days-1.2.0.5"
 libexecdir = "/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/twelve-days/.stack-work/install/x86_64-linux-tinfo6/a8fe30e2d5c57a16e3dba54071ef6fa4bf8aa8514da4410b74c98cd3e5f3aac8/8.6.5/libexec/x86_64-linux-ghc-8.6.5/twelve-days-1.2.0.5"
