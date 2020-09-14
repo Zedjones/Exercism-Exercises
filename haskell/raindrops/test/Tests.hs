@@ -1,5 +1,3 @@
-{-# OPTIONS_GHC -fno-warn-type-defaults #-}
-
 import Data.Foldable     (for_)
 import Test.Hspec        (Spec, describe, it, shouldBe)
 import Test.Hspec.Runner (configFastFail, defaultConfig, hspecWith)

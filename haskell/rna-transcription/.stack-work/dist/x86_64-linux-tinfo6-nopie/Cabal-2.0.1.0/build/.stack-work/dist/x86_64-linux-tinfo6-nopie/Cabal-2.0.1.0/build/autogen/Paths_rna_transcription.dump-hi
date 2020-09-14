@@ -1,0 +1,680 @@
+
+==================== FINAL INTERFACE ====================
+2018-04-30 16:58:31.665315534 UTC
+
+interface rna-transcription-1.2.0.7-ECOQ8I0QNGY4HOcE8B2ByE:Paths_rna_transcription 8022
+  interface hash: e5591e73c6d5a583458108ea2b6f223b
+  ABI hash: 8e606efa173f1649d17494a8a75eb681
+  export-list hash: 95af4bc747fa09f72665a442624fce69
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3e0eaacab5cb7b1243ba00bbebf24ac4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_rna_transcription.getBinDir
+  Paths_rna_transcription.getDataDir
+  Paths_rna_transcription.getDataFileName
+  Paths_rna_transcription.getDynLibDir
+  Paths_rna_transcription.getLibDir
+  Paths_rna_transcription.getLibexecDir
+  Paths_rna_transcription.getSysconfDir
+  Paths_rna_transcription.version
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:Data.Version
+                         base-4.10.1.0:GHC.Generics base-4.10.1.0:GHC.IO.Exception
+                         base-4.10.1.0:GHC.TypeLits base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Control.Exception c134ea327d158f2eebf26e12a1d4ad47
+import  -/  base-4.10.1.0:Data.Version 6f3983622b9a4afb46259626123f5908
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.IO e261d8b68ccf81a359626fa520b57d1d
+import  -/  base-4.10.1.0:GHC.IO.Exception c72758923693d771268bed5d3d52443d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.Environment c9f912affeed5beb387a8c5d2b2c6102
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+addDependentFile "/home/zedjones/.stack/programs/x86_64-linux/ghc-tinfo6-nopie-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux-tinfo6-nopie/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+8969d236a220ad42dd58fe613e336c98
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_rna_transcription.$trModule3
+                   Paths_rna_transcription.$trModule1) -}
+1a3945fbe77c5b736ead0c604a2a7c08
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Paths_rna_transcription.$trModule2) -}
+92d07526ddcb7594c588f968cc0b8e73
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Paths_rna_transcription"#) -}
+57d15685cf0ff2c0568ecb67fc6143bc
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Paths_rna_transcription.$trModule4) -}
+0314ab45cd9782026064886ee5f40834
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("rna-transcription-1.2.0.7-ECOQ8I0QNGY4HOcE8B2ByE"#) -}
+7ee912719dcb5cb87e52d4d044112f1a
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rna_transcription.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+5a182b480edffba95990ecd5a80bee34
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rna_transcription.getBinDir5
+                   Paths_rna_transcription.getBinDir2
+                   eta) -}
+231c13ca8c6af0608292c97dfa19d46f
+  getBinDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_rna_transcription.getBinDir3 #) } } }) -}
+b216a69d3bc41613d3dae31ee7664aed
+  getBinDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getBinDir4) -}
+4035ef068d92e4cd315791cf83c46a69
+  getBinDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/rna-transcription/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/bin"#) -}
+6cc4b33a69364b8681b8f809bbc4b89c
+  getBinDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_rna_transcription.getBinDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_rna_transcription.getBinDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+082b78864a58acdff4b1bffe171735cf
+  getBinDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getBinDir7) -}
+d7b235448d1667099e5fb170ed3938a9
+  getBinDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("rna_transcription_bindir"#) -}
+f0b3e7e23d1a28a6c5b877dd0a7c43ea
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rna_transcription.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+a2234334d220d74e9643b4e6f694a865
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rna_transcription.getDataDir5
+                   Paths_rna_transcription.getDataDir2
+                   eta) -}
+09d0c52618dc2dc687cf8a221f5e4c98
+  getDataDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_rna_transcription.getDataDir3 #) } } }) -}
+a5b5a1109b7cd241443b7bb9a6d559a2
+  getDataDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getDataDir4) -}
+9ac5a64c7d3d77d431a0faefc26ccb64
+  getDataDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/rna-transcription/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/share/x86_64-linux-ghc-8.2.2/rna-transcription-1.2.0.7"#) -}
+654d43d90029cb8849cbde54b9c36749
+  getDataDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_rna_transcription.getDataDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_rna_transcription.getDataDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+e89cdc5456ea57e73c4d19223864ef31
+  getDataDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getDataDir7) -}
+a01b7958a6931dc9401518cfcaa0e8a2
+  getDataDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("rna_transcription_datadir"#) -}
+0d0be52cebb24522f622e5d15508efde
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rna_transcription.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+48282835f6837b16b14c0db6efbf2126
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.SomeException
+                        Paths_rna_transcription.getDataDir5
+                        Paths_rna_transcription.getDataDir2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString#
+                         Paths_rna_transcription.getDataFileName2
+                         name) #) }) -}
+5eee171b90d94cbb2f901032a28230b5
+  getDataFileName2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/"#) -}
+69e4a793638c76f74790c546e150e030
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rna_transcription.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+9ca94c475b2cf47a64d17235f641f29e
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rna_transcription.getDynLibDir5
+                   Paths_rna_transcription.getDynLibDir2
+                   eta) -}
+13ccea1c3b59a3bd4d1142f27e5cc419
+  getDynLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_rna_transcription.getDynLibDir3 #) } } }) -}
+3c7a60271a1376f8c0c9cff257607321
+  getDynLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getDynLibDir4) -}
+ceb09c5d391ff6dce0bd3520630606ca
+  getDynLibDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/rna-transcription/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/lib/x86_64-linux-ghc-8.2.2"#) -}
+ca981b57ea1ad13f049617fc0bf36b29
+  getDynLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_rna_transcription.getDynLibDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_rna_transcription.getDynLibDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+e4013824b28c9c843c67b5bb48f3ad5b
+  getDynLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getDynLibDir7) -}
+6072ef682495bdef37e702b8ebdec2e9
+  getDynLibDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("rna_transcription_dynlibdir"#) -}
+f6a97e5d81be123b5cce89b206df913b
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rna_transcription.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+ee6c39d445745a574f47e020ae9f1c12
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rna_transcription.getLibDir5
+                   Paths_rna_transcription.getLibDir2
+                   eta) -}
+81c945cd9c6710042f22ece052880a94
+  getLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_rna_transcription.getLibDir3 #) } } }) -}
+8d8ebe67e2db12430c877ac7bc259553
+  getLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getLibDir4) -}
+1faf8efbc5666c939b423e575d20d5ee
+  getLibDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/rna-transcription/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/lib/x86_64-linux-ghc-8.2.2/rna-transcription-1.2.0.7-ECOQ8I0QNGY4HOcE8B2ByE"#) -}
+e02b9894d2ab4aa75557b9e8b58a7f48
+  getLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_rna_transcription.getLibDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_rna_transcription.getLibDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+ee6ebf8a58610b1b63391b39b673719e
+  getLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getLibDir7) -}
+e0e253c4f40433bd605981f287982e25
+  getLibDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("rna_transcription_libdir"#) -}
+ef465ecf4f1e35b2cc7d923c4371d7a1
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rna_transcription.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+c024c1df3a4b6feff6fcd8eb98118684
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rna_transcription.getLibexecDir5
+                   Paths_rna_transcription.getLibexecDir2
+                   eta) -}
+e7b4bf9d2cd4b8dae8a95d9f2f06fd0c
+  getLibexecDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_rna_transcription.getLibexecDir3 #) } } }) -}
+1212a4978a72329e973e09c5db5afe44
+  getLibexecDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getLibexecDir4) -}
+bd7c1d0d509f159b95ecc5528a078fe1
+  getLibexecDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/rna-transcription/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/libexec/x86_64-linux-ghc-8.2.2/rna-transcription-1.2.0.7"#) -}
+4d99a065b9a5d931548950e3576d6c48
+  getLibexecDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_rna_transcription.getLibexecDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_rna_transcription.getLibexecDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+742e64d12542978ab6cea77350481983
+  getLibexecDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getLibexecDir7) -}
+af93345d964f51947d9e722badcf0809
+  getLibexecDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("rna_transcription_libexecdir"#) -}
+f6b166791b7e95825b23bfb55b86eb4a
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_rna_transcription.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+5a608f68c129c9f2c848920aa28b6558
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_rna_transcription.getSysconfDir5
+                   Paths_rna_transcription.getSysconfDir2
+                   eta) -}
+a0886a3b3678fbe5f745563c271ce01f
+  getSysconfDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_rna_transcription.getSysconfDir3 #) } } }) -}
+306c91ca7015a7f5f981d605e0594628
+  getSysconfDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getSysconfDir4) -}
+713f5b5b19127071c7aa1537da9dd251
+  getSysconfDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/rna-transcription/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/etc"#) -}
+d27b1416651ac32102e13c1ead7e5132
+  getSysconfDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_rna_transcription.getSysconfDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_rna_transcription.getSysconfDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+790af1829b33b8e0497a060f65f011af
+  getSysconfDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_rna_transcription.getSysconfDir7) -}
+a459c1c9f58dcc681fc7ba187e709983
+  getSysconfDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("rna_transcription_sysconfdir"#) -}
+b7504d28d12a74e06fe00e11136b5df5
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_rna_transcription.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+10b9c0455278cd486a3439e3d7dda608
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_rna_transcription.version8
+                   Paths_rna_transcription.version2) -}
+d03737db4de572ffc2aeb993b277e44d
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_rna_transcription.version7
+                   Paths_rna_transcription.version3) -}
+e23be07e7de9b5bbc97867dcb3465a79
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_rna_transcription.version6
+                   Paths_rna_transcription.version4) -}
+8419d6c50d2ec1a72334b0b8d52421f6
+  version4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_rna_transcription.version5
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+580521d85159f8f24660ac5a3ccdf0b9
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 7#) -}
+953fbaf03a3ebb572727bab1e2506db6
+  version6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+69445858cd15a9c4d17d8ee9955d21ca
+  version7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+2de64e54b0e370a835f5caeb3ba872e1
+  version8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

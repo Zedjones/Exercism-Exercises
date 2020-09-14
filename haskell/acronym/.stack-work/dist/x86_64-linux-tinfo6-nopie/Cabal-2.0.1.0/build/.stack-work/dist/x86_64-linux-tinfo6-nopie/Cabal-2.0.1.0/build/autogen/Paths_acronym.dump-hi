@@ -1,0 +1,666 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-01 03:37:03.93794679 UTC
+
+interface acronym-1.3.0.5-Jx6WlfWQLaj4Omxlz69VMU:Paths_acronym 8022
+  interface hash: 878c17c7beff5f79ec88e65711b8da10
+  ABI hash: 2352bad9d2c034cdae6359785f51aea2
+  export-list hash: f346e42fa09b311ee9fa208e9dd56275
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3e0eaacab5cb7b1243ba00bbebf24ac4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_acronym.getBinDir
+  Paths_acronym.getDataDir
+  Paths_acronym.getDataFileName
+  Paths_acronym.getDynLibDir
+  Paths_acronym.getLibDir
+  Paths_acronym.getLibexecDir
+  Paths_acronym.getSysconfDir
+  Paths_acronym.version
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:Data.Version
+                         base-4.10.1.0:GHC.Generics base-4.10.1.0:GHC.IO.Exception
+                         base-4.10.1.0:GHC.TypeLits base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Control.Exception c134ea327d158f2eebf26e12a1d4ad47
+import  -/  base-4.10.1.0:Data.Version 6f3983622b9a4afb46259626123f5908
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.IO e261d8b68ccf81a359626fa520b57d1d
+import  -/  base-4.10.1.0:GHC.IO.Exception c72758923693d771268bed5d3d52443d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.Environment c9f912affeed5beb387a8c5d2b2c6102
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+addDependentFile "/home/zedjones/.stack/programs/x86_64-linux/ghc-tinfo6-nopie-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux-tinfo6-nopie/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+b0fbcaedc010a72f0eb3dda58834b772
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_acronym.$trModule3
+                   Paths_acronym.$trModule1) -}
+7aed08ef7ccfa91445358f8ac3a47e27
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Paths_acronym.$trModule2) -}
+f36543c644352cb4117c1f3ff2d82e77
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Paths_acronym"#) -}
+e60d256300575952f4ef05f2ba275b57
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Paths_acronym.$trModule4) -}
+a73372f0f0afa4009903232ad6cf8747
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("acronym-1.3.0.5-Jx6WlfWQLaj4Omxlz69VMU"#) -}
+3597c75eda74bdfd1976f82224cb36ad
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_acronym.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+10b7a97d34d28a438da164d4b1e79a34
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_acronym.getBinDir5
+                   Paths_acronym.getBinDir2
+                   eta) -}
+af24ecd66053b31a5e5a0aec9d19db96
+  getBinDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_acronym.getBinDir3 #) } } }) -}
+f101c272ff619c79013774ad62bdaaac
+  getBinDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getBinDir4) -}
+10e1d353e166cc9c2251d9a266a1ffdf
+  getBinDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/acronym/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/bin"#) -}
+e03d8fe3240f08c9cd826d43bd28fdfe
+  getBinDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_acronym.getBinDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2 ipv2 Paths_acronym.getBinDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+59f09a53d6415e29accf2f4295477974
+  getBinDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getBinDir7) -}
+b0a6622b330cc0d6c40babf3396e0e22
+  getBinDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("acronym_bindir"#) -}
+80fe6d05b72c7ba9f5013f03ddd4d488
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_acronym.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+4cb05fd0b93ecad6412daa3529e87560
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_acronym.getDataDir5
+                   Paths_acronym.getDataDir2
+                   eta) -}
+a92b5e24a6c68bb9f3b8cad920c250f2
+  getDataDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_acronym.getDataDir3 #) } } }) -}
+d2aeb5203a5c17b72d659ee41d2a6634
+  getDataDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getDataDir4) -}
+ed53d19b8d1ef3a0eb34dc396065be22
+  getDataDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/acronym/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/share/x86_64-linux-ghc-8.2.2/acronym-1.3.0.5"#) -}
+cb31161e1d7e07cc6fd2b19f0d9d2fa7
+  getDataDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_acronym.getDataDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2 ipv2 Paths_acronym.getDataDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+c4fbc45ff20eeb25d708fd96eef03dd5
+  getDataDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getDataDir7) -}
+b75489fa71208eeb57cb6452c41b0eb0
+  getDataDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("acronym_datadir"#) -}
+4f97109c6c6b2abd98d71c9aac6215a6
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_acronym.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+1db791e5a8a609616fde832cae074a8a
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.SomeException
+                        Paths_acronym.getDataDir5
+                        Paths_acronym.getDataDir2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString#
+                         Paths_acronym.getDataFileName2
+                         name) #) }) -}
+8186b4050e88fc2bea8741b7de9f529e
+  getDataFileName2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/"#) -}
+7294a24443c69ecc7f35cd71268c83e9
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_acronym.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+5ffe9ecfb6417996a3d87b43dd90b160
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_acronym.getDynLibDir5
+                   Paths_acronym.getDynLibDir2
+                   eta) -}
+a5c1d32d37eef108030aa733d6474753
+  getDynLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_acronym.getDynLibDir3 #) } } }) -}
+81ea3a0153b9a6bfe97a5a7c2bd8913e
+  getDynLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getDynLibDir4) -}
+eae715bb015316fb0f946c525b637da3
+  getDynLibDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/acronym/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/lib/x86_64-linux-ghc-8.2.2"#) -}
+b7a727416833d7849fc7230eacdced8f
+  getDynLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_acronym.getDynLibDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2 ipv2 Paths_acronym.getDynLibDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+b86876b835080b4db8beeebc966fa31f
+  getDynLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getDynLibDir7) -}
+477d42295f0ecbde615dde86318f1928
+  getDynLibDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("acronym_dynlibdir"#) -}
+8d85ffc5aa7098efe47ab961d21a1ecd
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_acronym.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+742202e45dd8c88c234fd265c130d721
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_acronym.getLibDir5
+                   Paths_acronym.getLibDir2
+                   eta) -}
+34241ea4aa9f701180743f95dd438701
+  getLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_acronym.getLibDir3 #) } } }) -}
+2df2c9a43550fe00a0fcedc6f0ff610d
+  getLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getLibDir4) -}
+6e1de62667f2dc453035eb5afe0cdb55
+  getLibDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/acronym/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/lib/x86_64-linux-ghc-8.2.2/acronym-1.3.0.5-Jx6WlfWQLaj4Omxlz69VMU"#) -}
+0e5084ceab50f280d30a3ec8414225ff
+  getLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_acronym.getLibDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2 ipv2 Paths_acronym.getLibDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+4a89b14cdad522cac163cdd71d8f70c8
+  getLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getLibDir7) -}
+09909fa9a7c412d770b24933ed8a0a21
+  getLibDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("acronym_libdir"#) -}
+c0d0ba3af6da2cd7554f2672d9484267
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_acronym.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+de516fb7de7ec79b421cb408bfb69c2e
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_acronym.getLibexecDir5
+                   Paths_acronym.getLibexecDir2
+                   eta) -}
+86bced2caf83e8d1a0bbfa839a2705d5
+  getLibexecDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_acronym.getLibexecDir3 #) } } }) -}
+426b84d31bee4d995d1fb6e5ca65eeb2
+  getLibexecDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getLibexecDir4) -}
+ab8fe8b690e91b483687c10168a1516e
+  getLibexecDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/acronym/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/libexec/x86_64-linux-ghc-8.2.2/acronym-1.3.0.5"#) -}
+9ec0603c0b4c78ec6c12336e4c563fee
+  getLibexecDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_acronym.getLibexecDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2 ipv2 Paths_acronym.getLibexecDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+cbf13021f0c8d10bc384e8dc9a7873f6
+  getLibexecDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getLibexecDir7) -}
+b5a12c12ac23bba277efe84d020baf0f
+  getLibexecDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("acronym_libexecdir"#) -}
+cdfb0fa9e9044105cd0ae141a1deb9ff
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_acronym.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+797f98ca92637c453cc5a613bca1a249
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_acronym.getSysconfDir5
+                   Paths_acronym.getSysconfDir2
+                   eta) -}
+9590d97c940b300614b60362d6d2d67c
+  getSysconfDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_acronym.getSysconfDir3 #) } } }) -}
+5594e87bd7e47263cf26c09ffaec7201
+  getSysconfDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getSysconfDir4) -}
+b9962a349ba12e2775b5ce2ba1c4d91d
+  getSysconfDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/acronym/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/etc"#) -}
+6dd79a687ffd1b327dd950ae99ebcfa1
+  getSysconfDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_acronym.getSysconfDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2 ipv2 Paths_acronym.getSysconfDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+770380964267eff0bd05bc604cdb27cf
+  getSysconfDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_acronym.getSysconfDir7) -}
+07ccef9f4e09d939536a69a603c58717
+  getSysconfDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("acronym_sysconfdir"#) -}
+04dea9518fe98d785d09e14b0460ca88
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_acronym.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+c78a64471d62d0145d53c93521554b55
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_acronym.version8
+                   Paths_acronym.version2) -}
+35c64a9bcd90ca0a4853e2814448e889
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_acronym.version7
+                   Paths_acronym.version3) -}
+d545db09efad8ea624bf79554f9bf28e
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_acronym.version6
+                   Paths_acronym.version4) -}
+496f3380ef68c7c46ffe90e8702c0c88
+  version4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_acronym.version5
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+88a794899a18d62ab661f954cd086b4d
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+2d2fdb74b06f1937c7d5fea37e8cc885
+  version6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+5c2c0d5dd191a7f4a9ed27568dca1fb6
+  version7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+2d387f31daa0ddf1385a5a4a99ff5b0e
+  version8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

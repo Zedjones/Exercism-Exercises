@@ -1,0 +1,671 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-01 14:28:12.147899889 UTC
+
+interface perfect-numbers-1.1.0.2-GjqsYfZ3sW6Abgaaga9t6L:Paths_perfect_numbers 8022
+  interface hash: 4e11b3bd80c41b0cdf80809e21d841b2
+  ABI hash: 81c9081d4692f1be85fe583ad16a3525
+  export-list hash: b2cd679ad156e49a0cd64d5a2d80363a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3e0eaacab5cb7b1243ba00bbebf24ac4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_perfect_numbers.getBinDir
+  Paths_perfect_numbers.getDataDir
+  Paths_perfect_numbers.getDataFileName
+  Paths_perfect_numbers.getDynLibDir
+  Paths_perfect_numbers.getLibDir
+  Paths_perfect_numbers.getLibexecDir
+  Paths_perfect_numbers.getSysconfDir
+  Paths_perfect_numbers.version
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:Data.Version
+                         base-4.10.1.0:GHC.Generics base-4.10.1.0:GHC.IO.Exception
+                         base-4.10.1.0:GHC.TypeLits base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Control.Exception c134ea327d158f2eebf26e12a1d4ad47
+import  -/  base-4.10.1.0:Data.Version 6f3983622b9a4afb46259626123f5908
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.IO e261d8b68ccf81a359626fa520b57d1d
+import  -/  base-4.10.1.0:GHC.IO.Exception c72758923693d771268bed5d3d52443d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.Environment c9f912affeed5beb387a8c5d2b2c6102
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+addDependentFile "/home/zedjones/.stack/programs/x86_64-linux/ghc-tinfo6-nopie-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux-tinfo6-nopie/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+0954c17dbd0b304b2b1e90d29ec1ebbe
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_perfect_numbers.$trModule3
+                   Paths_perfect_numbers.$trModule1) -}
+1a5f26c8670d6de334fbc70118cf9e66
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Paths_perfect_numbers.$trModule2) -}
+2411f8ec48bbbf2ff25d363de1a2d9d2
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Paths_perfect_numbers"#) -}
+60208219ee84c358765d61c938c0e18a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Paths_perfect_numbers.$trModule4) -}
+99689e34eea4fd757f95fd257b448567
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("perfect-numbers-1.1.0.2-GjqsYfZ3sW6Abgaaga9t6L"#) -}
+ac4b58ec1a7cc729adb4baef49512226
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_perfect_numbers.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+7dc28d3b408032d0f7879aef18b2ebfc
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_perfect_numbers.getBinDir5
+                   Paths_perfect_numbers.getBinDir2
+                   eta) -}
+9e9d4752d3ffd35c5fadf913dbb4dc05
+  getBinDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_perfect_numbers.getBinDir3 #) } } }) -}
+2360b35cb4973a8e223ab999a0110531
+  getBinDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getBinDir4) -}
+01ec262c2352dd730705bcd01d528470
+  getBinDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/perfect-numbers/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/bin"#) -}
+c440b7dd47d5a1a7679d0779a9baead1
+  getBinDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_perfect_numbers.getBinDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2 ipv2 Paths_perfect_numbers.getBinDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+284e5120526f0ba63f62aba0caa51215
+  getBinDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getBinDir7) -}
+a3b61d1b3fda43cfd65012fcc2526ec1
+  getBinDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("perfect_numbers_bindir"#) -}
+74a896ea01d73983f68276222ba3c513
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_perfect_numbers.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+7de00e23e8def10f776d66c1ca071a09
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_perfect_numbers.getDataDir5
+                   Paths_perfect_numbers.getDataDir2
+                   eta) -}
+8d775fafafec52a06893ba4855f7a795
+  getDataDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_perfect_numbers.getDataDir3 #) } } }) -}
+7452cf570f37180b2aa3cf6f098aac94
+  getDataDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getDataDir4) -}
+24780b1368b2c3b26fb77caff5f45fe5
+  getDataDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/perfect-numbers/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/share/x86_64-linux-ghc-8.2.2/perfect-numbers-1.1.0.2"#) -}
+21282fe3c24e790689fe58d0f8e7efd1
+  getDataDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_perfect_numbers.getDataDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_perfect_numbers.getDataDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+2ba0f00689fc23fef21d11d87d7cd32b
+  getDataDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getDataDir7) -}
+23ccc56abe0ceea7713b423264cde23b
+  getDataDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("perfect_numbers_datadir"#) -}
+2a9fc7bdfa846e4ca76eaed2b3182ef6
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_perfect_numbers.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+2d1b7163fcd441853497062b889ecbd7
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.SomeException
+                        Paths_perfect_numbers.getDataDir5
+                        Paths_perfect_numbers.getDataDir2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString#
+                         Paths_perfect_numbers.getDataFileName2
+                         name) #) }) -}
+3d8c50150147d057661adf97b47fa0a9
+  getDataFileName2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("/"#) -}
+4d2e309363f54e83fee16850ffe11984
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_perfect_numbers.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+a877a9ea1ac2fd18fc2fd5dac95e6b72
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_perfect_numbers.getDynLibDir5
+                   Paths_perfect_numbers.getDynLibDir2
+                   eta) -}
+59c7ba0b947e72515104fbf63da742f6
+  getDynLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_perfect_numbers.getDynLibDir3 #) } } }) -}
+927c9e69c5b3308818c9864af3ef7403
+  getDynLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getDynLibDir4) -}
+e77604dba81bd58b8b49d5cbafaab96a
+  getDynLibDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/perfect-numbers/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/lib/x86_64-linux-ghc-8.2.2"#) -}
+2af1a978e8fee0d2b728502ace323a4d
+  getDynLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_perfect_numbers.getDynLibDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_perfect_numbers.getDynLibDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+7d1cdf269deda1449451ec685891cbc4
+  getDynLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getDynLibDir7) -}
+5744f83a09e4ea169ddd6004f432435a
+  getDynLibDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("perfect_numbers_dynlibdir"#) -}
+fd3e7a49c45ed188baa6a51bfa59659c
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_perfect_numbers.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+594a23a4fcd5c59b7a06b5bf8ca09026
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_perfect_numbers.getLibDir5
+                   Paths_perfect_numbers.getLibDir2
+                   eta) -}
+23288bc77db357f55127627a32a9983e
+  getLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_perfect_numbers.getLibDir3 #) } } }) -}
+8f83bf2e7bb000bf75e89955efca110d
+  getLibDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getLibDir4) -}
+ee9bfb1a18b6a55d9e153da2d78b1d3b
+  getLibDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/perfect-numbers/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/lib/x86_64-linux-ghc-8.2.2/perfect-numbers-1.1.0.2-GjqsYfZ3sW6Abgaaga9t6L"#) -}
+b5843c6800892aefdc2dc4185e83eca2
+  getLibDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_perfect_numbers.getLibDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2 ipv2 Paths_perfect_numbers.getLibDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+e01017eeb5bdc42f0f5f3683e4698fb7
+  getLibDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getLibDir7) -}
+afa91e1543399751e3d6d4946c557864
+  getLibDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("perfect_numbers_libdir"#) -}
+ace1d80bf86ea5b84a2e9c3c85760ad6
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_perfect_numbers.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+19c196246fd71897afc8fe3cd2b5ebb4
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_perfect_numbers.getLibexecDir5
+                   Paths_perfect_numbers.getLibexecDir2
+                   eta) -}
+21f817549e1f429ede4273c702742319
+  getLibexecDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_perfect_numbers.getLibexecDir3 #) } } }) -}
+2684ca5f7fd21131cc42a99c0bd0843b
+  getLibexecDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getLibexecDir4) -}
+f8f2404c07056a6bc146a5c91e781a92
+  getLibexecDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/perfect-numbers/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/libexec/x86_64-linux-ghc-8.2.2/perfect-numbers-1.1.0.2"#) -}
+f037034740e54a9820cb31359625c756
+  getLibexecDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_perfect_numbers.getLibexecDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_perfect_numbers.getLibexecDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+5777c21620453dc6ebd825daf208b5ac
+  getLibexecDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getLibexecDir7) -}
+18cbffdfedbbe8567f875838352166b7
+  getLibexecDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("perfect_numbers_libexecdir"#) -}
+3a1590c63bcb80aa668a7b07d1eabd9d
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_perfect_numbers.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+6f804f3e2b644071c4d1277e29744678
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_perfect_numbers.getSysconfDir5
+                   Paths_perfect_numbers.getSysconfDir2
+                   eta) -}
+78f3ec914ddbc388946f352599380199
+  getSysconfDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ GHC.IO.Exception.IOException
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (# eta, Paths_perfect_numbers.getSysconfDir3 #) } } }) -}
+94229898c6029ed596fda565e754bd0b
+  getSysconfDir3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getSysconfDir4) -}
+9e1c70e49261a94f37554a9ca54ab2dc
+  getSysconfDir4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("/home/zedjones/Documents/Personal/Exercism-Exercises/haskell/perfect-numbers/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-11.1/8.2.2/etc"#) -}
+494bb051a6b80843afd2130c3510981a
+  getSysconfDir5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        ipv1
+                        Paths_perfect_numbers.getSysconfDir6
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Base.Nothing
+                   -> System.Environment.getEnv2
+                        ipv2
+                        Paths_perfect_numbers.getSysconfDir6
+                   GHC.Base.Just x -> (# ipv2, x #) } } }) -}
+0bc9e9fd3bc8f5e036c699a8ebca29b6
+  getSysconfDir6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Paths_perfect_numbers.getSysconfDir7) -}
+dad7e27623bb51df6f67be09cad57434
+  getSysconfDir7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("perfect_numbers_sysconfdir"#) -}
+2789f072e2766c7588a3261564ea8d39
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_perfect_numbers.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+c4946dafe40793411b7ffb869ee04d25
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_perfect_numbers.version7
+                   Paths_perfect_numbers.version2) -}
+fa47dcc8c8b73a0fb333f7899d0f535f
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_perfect_numbers.version7
+                   Paths_perfect_numbers.version3) -}
+bc4273d9453cf45d8baaffb69a368767
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_perfect_numbers.version6
+                   Paths_perfect_numbers.version4) -}
+a50647ea79f43045ff6241c988ff25d5
+  version4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_perfect_numbers.version5
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+c6c3276a339ac8b2e27ba7dc621c5472
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+9660ac7556ea80b46fb853d3f3c4ffb0
+  version6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+d4ee8f7c218b97af87980353a8ecce4a
+  version7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

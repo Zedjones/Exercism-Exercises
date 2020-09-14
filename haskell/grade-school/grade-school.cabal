@@ -1,13 +1,14 @@
--- This file has been generated from package.yaml by hpack version 0.27.0.
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 447bf3fa7b074257b2c86c32c5aa6d51d150f02fd054cbf164be023e952481e5
+-- hash: cad658c8f9aa0be02275b50f55e733a5a221a60002c52c368101cc8a598df12b
 
 name:           grade-school
 version:        0.1.0.2
 build-type:     Simple
-cabal-version:  >= 1.10
 
 library
   exposed-modules:

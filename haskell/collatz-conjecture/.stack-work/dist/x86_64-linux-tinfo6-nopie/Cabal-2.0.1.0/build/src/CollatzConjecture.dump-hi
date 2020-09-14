@@ -1,0 +1,70 @@
+
+==================== FINAL INTERFACE ====================
+2018-04-30 15:07:51.674761375 UTC
+
+interface collatz-conjecture-1.2.0.2-2T6dTYMSo0uLCtdZnicEGW:CollatzConjecture 8022
+  interface hash: 615a5ce28cefaec59b70bbecbe22a929
+  ABI hash: 4b42a406b0e857cb516268e506c422e3
+  export-list hash: c272e1eb3e65d91fc63eefb478c8fd6d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 26e0ff4b0ff758fc4ebf6a516aed248e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  CollatzConjecture.collatz
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  integer-gmp-1.0.1.0:GHC.Integer.Type 5fa81108482c33b62ec3ac7464eece96
+18dcec7f409b13cc2bf451b425675190
+  $seven1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+cdff737f872cce10cc65401a22e1a9b2
+  $seven2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+9b7c214d072b08859c1cb40c4f3a085f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   CollatzConjecture.$trModule3
+                   CollatzConjecture.$trModule1) -}
+478881df32b9ab68e5c66dd8dc37c841
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CollatzConjecture.$trModule2) -}
+04c40da42a5bbab33c76c40f54ae1a5c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CollatzConjecture"#) -}
+6a0445b43c87e118a6e70077e9680e1a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CollatzConjecture.$trModule4) -}
+3fc70576ef441c06c25811395213536f
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("collatz-conjecture-1.2.0.2-2T6dTYMSo0uLCtdZnicEGW"#) -}
+522769ddb3ffe50d91c3188006aa721f
+  collatz ::
+    GHC.Integer.Type.Integer -> GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,13 +1,14 @@
--- This file has been generated from package.yaml by hpack version 0.27.0.
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 88ac53ce4b582ca232e8e6c6bc7fcc2a77fa8992d58bce7bbac141ae4289914d
+-- hash: ee1f79e9f534f0a8a7d5d4ae27a134a5bdbba27d6a2b31feaafd5fe8bfd6adf5
 
 name:           raindrops
 version:        1.1.0.4
 build-type:     Simple
-cabal-version:  >= 1.10
 
 library
   exposed-modules:

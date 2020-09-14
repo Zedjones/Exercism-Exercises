@@ -1,0 +1,162 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-04 04:40:10.071346481 UTC
+
+interface etl-1.0.0.3-HCI4U16i7aN3PkXK6QwVxs:ETL 8022
+  interface hash: 7cb581c3e52773a3439b12d0b820a7ed
+  ABI hash: 26a97ec21d67e7cf5da0e57f80171454
+  export-list hash: dd7c433fcfabbdfc8a23b920448eb897
+  orphan hash: db44dc3952d0265c497a2825896da9ab
+  flag hash: 26e0ff4b0ff758fc4ebf6a516aed248e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ETL.transform
+module dependencies:
+package dependencies: array-0.5.2.0 base-4.10.1.0*
+                      containers-0.5.10.2 deepseq-1.4.3.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Set.Internal
+import  -/  base-4.10.1.0:Data.Char fe4e3458190deeac19969ce15e33bed9
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Tuple 8fa1305aa5032ea35e2a54fa5f1e78f9
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Unicode 49c9de4fffed0d9be65aaeb6a60b757c
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  containers-0.5.10.2:Data.Map d23af8194022e93d0288135c0af69dae
+import  -/  containers-0.5.10.2:Data.Map.Internal 33ddbf5aa8c0f2ab26fb6dc5be1b1f4c
+48d3251516707edd1b78b17a2aa47aec
+  $sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Internal.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Types.Char, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Internal.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Internal.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Internal.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> ETL.$wpoly_go13
+                                  @ a
+                                  1#
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> ETL.$sfromList1
+                                  @ a
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+eeab684c06bb7182080e71ab3074860f
+  $sfromList1 ::
+    Data.Map.Internal.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)] -> Data.Map.Internal.Map GHC.Types.Char a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+42dae750f256d0e4c85c5d2e3cb66ae7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module ETL.$trModule3 ETL.$trModule1) -}
+0ff5f44eb5f03d8f483e89ecba996d27
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ETL.$trModule2) -}
+c81a105ead990f3dfe2e6cfe0507f9ec
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ETL"#) -}
+8d288f21fd0f21f14e15fc02f1cc6731
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ETL.$trModule4) -}
+14d5e35d6fe996d0f662cce88df995b9
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("etl-1.0.0.3-HCI4U16i7aN3PkXK6QwVxs"#) -}
+565173cdd9639829ac403b8acc90e6f2
+  $w$sgo13 ::
+    GHC.Types.Char
+    -> GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Internal.Map GHC.Types.Char a1
+    -> Data.Map.Internal.Map GHC.Types.Char a1
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+9cab2989dc73a01f8c39ca691c2cac32
+  $wpoly_go13 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Internal.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+4eadce4e92e93f89ad8b5f6ffdfe037c
+  transform ::
+    Data.Map.Internal.Map a GHC.Base.String
+    -> Data.Map.Internal.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a
+                   (legacyData :: Data.Map.Internal.Map a GHC.Base.String) ->
+                 ETL.$sfromList
+                   @ a
+                   (ETL.transform1
+                      @ a
+                      (GHC.Types.[] @ (GHC.Types.Char, a))
+                      legacyData)) -}
+f2c5c4002f79a489795909b2aaf13e33
+  transform1 ::
+    [(GHC.Types.Char, a)]
+    -> Data.Map.Internal.Map a [GHC.Types.Char]
+    -> [(GHC.Types.Char, a)]
+  {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+"SPEC/ETL fromList @ Char _" [orphan] forall @ a
+                                             ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Internal.fromList @ GHC.Types.Char @ a $dOrd
+  = ETL.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
